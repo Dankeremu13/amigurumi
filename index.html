@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigurumis de Corazón</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Amigurumis de Corazón</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#creaciones">Creaciones</a></li>
+                    <li><a href="#contacto">Clases y Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="slider">
+            <div class="slide active" style="background-image: url('images/slider2.png');">
+                <div class="slide-content">
+                    <h2>Arte tejido a mano</h2>
+                    <p>Personajes que cobran vida con hilo y aguja.</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/ariel.png');">
+                 <div class="slide-content">
+                    <h2>Regalos únicos y especiales</h2>
+                    <p>Sorprende a tus seres queridos con un detalle inolvidable.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="creaciones" class="container">
+            <h2>Nuestras Creaciones</h2>
+            <p class="section-description">Cada amigurumi está hecho con dedicación, cuidando cada detalle para ofrecerte una pieza única.</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/ariel.png" alt="Amigurumi de La Sirenita Ariel">
+                    <h3>Ariel, La Sirenita</h3>
+                    <p>Elaborada con estambre de algodón y mucho amor.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bella-y-bestia.png" alt="Amigurumi de La Bella y la Bestia">
+                    <h3>Lumière y Sra. Potts</h3>
+                    <p>Los compañeros perfectos para la hora del té.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Coraline.png" alt="Próxima creación">
+                    <h3>Tu Personaje Favorito</h3>
+                    <p>Realizamos pedidos personalizados. ¡Contáctanos!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="container">
+            <h2>Clases y Contacto</h2>
+            <p class="section-description">¿Quieres aprender a tejer tus propios amigurumis o hacer un pedido especial? Déjanos tus datos y nos pondremos en contacto contigo.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+            <div id="form-feedback" class="hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Amigurumis de Corazón. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

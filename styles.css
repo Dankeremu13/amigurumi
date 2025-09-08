@@ -1,0 +1,217 @@
+/* Estilos Generales */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #fdf6f9; /* Un rosa muy pálido */
+    color: #444;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Pacifico', cursive;
+    color: #d15a86; /* Un tono de rosa más fuerte */
+}
+
+/* Header y Navegación */
+header {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d15a86;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide-content {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+/* Secciones */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-description {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+/* Galería de Creaciones */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.gallery-item h3 {
+    margin: 15px 0 5px;
+}
+
+.gallery-item p {
+    padding: 0 20px 20px;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Formulario de Contacto */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Importante para que el padding no afecte el ancho */
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #d15a86;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #b94b75;
+}
+
+#form-feedback {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#form-feedback.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+#form-feedback.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
